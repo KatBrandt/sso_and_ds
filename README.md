@@ -50,9 +50,9 @@ You can click on `Directory` to see the list of users currently in the Directory
 Here's a demonstration of the application in action:
 
 <video width="800" controls>
-  <source src="videos/your-video-name.mp4" type="video/mp4">
+  <source src="videos/app-demo.mov" type="video/mov">
   Your browser does not support the video tag.
 </video>
 
-*Note: Replace `your-video-name.mp4` with the actual filename of your video.*
+
 
