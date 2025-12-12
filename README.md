@@ -1,27 +1,37 @@
-# ruby-sso-example
+# Kat Brandt's Tech Challenge
 
-An example Sinatra application demonstrating how SSO works with WorkOS and Ruby.
+This example application demonstrates the integration of WorkOS SSO and DirectorySync. 
+
+Base Example Code from [ruby-example-applications/ruby-sso-example](https://github.com/workos/ruby-example-applications/tree/main/ruby-sso-example)
 
 ## Clone and Install
 
-1. Clone the main repo:
+1. Clone the repo:
 
 ```sh
-git clone https://github.com/workos/ruby-example-applications.git
+git clone git@github.com:KatBrandt/workos_tech_challenge.git
 ```
 
-2. Navigate to the Ruby SSO app within the main repo and install dependencies:
+2. Navigate into directory and install dependencies:
 
 ```sh
-cd ruby-example-applications/ruby-sso-example && bundle install
+cd workos_tech_challenge
+bundle install
 ```
 
 ## Configure your environment
 
-1. Grab your [API Key](https://dashboard.workos.com/api-keys) and your [Client ID](https://dashboard.workos.com/configuration).
-2. Run `cp .env.example .env` and add your API key and Client ID. The `workos` gem will read your API key from the ENV variable `WORKOS_API_KEY` and your Client ID from the ENV variable `WORKOS_CLIENT_ID`. You may also set the API key and Client ID yourself by adding `WorkOS.key = $YOUR_API_KEY` and `CLIENT_ID = $YOUR_CLIENT_ID` to `app.rb`.
-3. Create an [Organization](https://dashboard.workos.com/organizations) and an SSO Connection within that organization. Copy the organization ID to the .env file.
-4. Add a [Redirect URI](https://dashboard.workos.com/configuration) with the value `http://localhost:4567/callback`.
+You will need the following secrets set:
+
+```sh
+WORKOS_API_KEY
+WORKOS_CLIENT_ID
+WORKOS_ORGANIZATION_ID
+DIRECTORY_ID
+```
+
+1. Run `cp .env.example .env` and add the appropriate secrets.
+
 
 ## Run the app and log in using SSO
 
@@ -31,4 +41,18 @@ ruby app.rb
 
 Head to `http://localhost:4567` and click Sign In to authenticate!
 
-For more information, see the [WorkOS Ruby SDK documentation](https://docs.workos.com/sdk/ruby).
+However, until you have those secrets setup, you won't be able to authenticate. 
+
+You can click on `Directory` to see the list of users currently in the Directory. (Or head to `http://localhost:4567/users`).
+
+## Demo
+
+Here's a demonstration of the application in action:
+
+<video width="800" controls>
+  <source src="videos/your-video-name.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*Note: Replace `your-video-name.mp4` with the actual filename of your video.*
+
