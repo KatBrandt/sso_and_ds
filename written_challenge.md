@@ -44,7 +44,7 @@ Julia
 
 **My response**
 
-Hi Julia!
+Hi Julia! 😃
 
 Thanks for reaching out. Yes, you can send custom, arbitrary data through the authentication flow. 
 You would do this via the `state` field when generating the Authorization URL. 
