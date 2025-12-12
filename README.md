@@ -49,7 +49,11 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 Here's a demonstration of the application in action:
 
-https://github.com/user-attachments/assets/31a5ec85-64e5-4d86-afe4-7e4a4a52f58c
+
+
+https://github.com/user-attachments/assets/638003ec-5215-4a81-83b9-f0bbd112dd1e
+
+
 
 
 
