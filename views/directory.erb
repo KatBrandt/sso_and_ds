@@ -1,0 +1,26 @@
+<div class="flex_column">
+    <h1>User List</h1>
+
+    <% if @users && @users.length > 0 %>
+        <div class="flex">
+            <table class="card" style="border-collapse: collapse; text-align: left; width: auto; min-width: 400px;">
+                <thead>
+                    <tr>
+                        <th style="padding: 15px; border-bottom: 2px solid #6363f1; text-align: left; width: 200px;">First Name</th>
+                        <th style="padding: 15px; border-bottom: 2px solid #6363f1; text-align: left; width: 200px;">Last Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @users.each do |user| %>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: left;"><%= user[:first_name] %></td>
+                            <td style="padding: 15px; border-bottom: 1px solid #eee; text-align: left;"><%= user[:last_name] %></td>
+                        </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+    <% else %>
+        <p>No users found in the directory.</p>
+    <% end %>
+</div>

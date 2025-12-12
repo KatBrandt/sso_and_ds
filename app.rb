@@ -75,6 +75,23 @@ get '/callback' do
   redirect '/' 
 end
 
+get '/users' do
+  directory_id = ENV['DIRECTORY_ID']
+
+  user_list = WorkOS::DirectorySync.list_users(
+    directory: directory_id
+  )
+
+  @users = user_list.data.map do |user|
+    {
+      first_name: user[:first_name],
+      last_name: user[:last_name]
+    }
+  end
+
+  erb :directory, :layout => :layout
+end
+
 # Logout a user
 get '/logout' do
   session[:user] = nil
