@@ -4,7 +4,9 @@ This example application demonstrates the integration of WorkOS SSO and Director
 
 Base Example Code from [ruby-example-applications/ruby-sso-example](https://github.com/workos/ruby-example-applications/tree/main/ruby-sso-example)
 
-## Clone and Install
+## Running this app locally
+
+### Clone and Install
 
 1. Clone the repo:
 
@@ -19,7 +21,7 @@ cd workos_tech_challenge
 bundle install
 ```
 
-## Configure your environment
+### Configure your environment
 
 You will need to set the following secrets:
 
@@ -31,10 +33,10 @@ DIRECTORY_ID
 ```
 Please contact me, to get these secrets so you can run this app locally. 
 
-1. Run `cp .env.example .env` and add the appropriate secrets to the .env file.
+3. Run `cp .env.example .env` and add the appropriate secrets to the .env file.
 
 
-## Run the app and log in using SSO
+### Run the app and log in using SSO
 
 ```sh
 ruby app.rb
