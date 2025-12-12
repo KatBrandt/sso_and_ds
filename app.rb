@@ -28,6 +28,7 @@ use(
 get '/' do
   @current_user = session[:user] && JSON.pretty_generate(session[:user])
   @first_name = session[:first_name]
+  @last_name = session[:last_name]
   erb :index, :layout => :layout
 end
 
@@ -69,6 +70,7 @@ get '/callback' do
 
   session[:user] = profile.to_json
   session[:first_name] = profile.first_name
+  session[:last_name] = profile.last_name
 
   redirect '/' 
 end
