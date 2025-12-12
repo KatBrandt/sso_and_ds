@@ -49,10 +49,5 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 Here's a demonstration of the application in action:
 
-<video width="800" controls>
-  <source src="videos/app-demo.mov" type="video/mov">
-  Your browser does not support the video tag.
-</video>
-
-
+![App Demo](videos/app-demo.mov)
 
