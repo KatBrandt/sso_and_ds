@@ -1,6 +1,6 @@
 # Kat Brandt's Tech Challenge
 
-This example application demonstrates the integration of WorkOS SSO and DirectorySync. 
+This example application demonstrates the integration of [WorkOS SSO](https://workos.com/docs/reference/sso) and [DirectorySync](https://workos.com/docs/reference/directory-sync). 
 
 Base Example Code from [ruby-example-applications/ruby-sso-example](https://github.com/workos/ruby-example-applications/tree/main/ruby-sso-example)
 
