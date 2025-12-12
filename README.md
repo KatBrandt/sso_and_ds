@@ -49,5 +49,5 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 Here's a demonstration of the application in action:
 
-![App Demo](videos/app-demo.mov)
+![App Demo](videos/app-demo.gif)
 
