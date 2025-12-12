@@ -29,6 +29,7 @@ WORKOS_CLIENT_ID
 WORKOS_ORGANIZATION_ID
 DIRECTORY_ID
 ```
+Please contact me, to get these secrets so you can run this app locally. 
 
 1. Run `cp .env.example .env` and add the appropriate secrets to the .env file.
 
@@ -47,7 +48,7 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 ## Demo
 
-Here's a demonstration of the application in action:
+Here's a demonstration of the application in action, showing successful login to "New Shiny App" via Okta as well as displaying the list of users in the Directory.
 
 
 
