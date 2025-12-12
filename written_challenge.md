@@ -19,7 +19,7 @@ Thanks for reaching out!
 The reason you’re not finding IdP metadata in the WorkOS docs is because WorkOS does not function as an Identity Provider (IdP). WorkOS does not issue IdP metadata or authenticate users to third-party applications.
 Instead, WorkOS acts as a middleware layer between your application and your customers’ IdPs (Okta, Google Workspace, Azure AD, etc.) so that your customers can use SSO to log into *your* app via [AuthKit](https://workos.com/docs/authkit/vanilla/nodejs) and/or the [WorkOS SSO API](https://workos.com/docs/sso).
 
-Because of this, WorkOS cannot act as the IdP in a SAML flow for SparkNova. To set up SSO for SparkNova, you would need to configure SAML directly in the IdP your organization already uses (such as Okta, Google, or Azure AD), and then complete the configuration steps in SparkNova’s own admin portal or SSO settings page. However, [here is the WorkOS guide to setting up Okta SAML](https://workos.com/docs/integrations/okta-saml), you may still find this useful as it shows how to find the IdP metadata via your Okta admin console. 
+Because of this, WorkOS cannot act as the IdP in a SAML flow for SparkNova. To set up SSO for SparkNova, you would need to configure SAML directly in the IdP your organization already uses (such as Okta, Google, or Azure AD), and then complete the configuration steps in SparkNova’s admin portal or SSO settings page. However, [here is the WorkOS guide to setting up Okta SAML](https://workos.com/docs/integrations/okta-saml), even though this is for WorkOS, you may still find this useful as it shows how to find the IdP metadata via your Okta admin console. 
 
 I hope this helps! Please let me know if you have any further questions.
 
