@@ -62,12 +62,10 @@ get '/callback' do
   )
   profile = profile_and_token.profile
 
-  # organization = "Astro Kat Enterprise"
-
   # Validate that this profile belongs to the organization used for authentication
-  # if profile.organization_id != ENV["WORKOS_ORGANIZATION_ID"]
-  #   render json: {error: "Unauthorized", status: 401}.to_json
-  # end
+  if profile.organization_id != ENV["WORKOS_ORGANIZATION_ID"]
+    render json: {error: "Unauthorized", status: 401}.to_json
+  end
 
   session[:user] = profile.to_json
   session[:first_name] = profile.first_name
