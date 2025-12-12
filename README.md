@@ -21,7 +21,7 @@ bundle install
 
 ## Configure your environment
 
-You will need the following secrets set:
+You will need to set the following secrets:
 
 ```sh
 WORKOS_API_KEY
@@ -30,7 +30,7 @@ WORKOS_ORGANIZATION_ID
 DIRECTORY_ID
 ```
 
-1. Run `cp .env.example .env` and add the appropriate secrets.
+1. Run `cp .env.example .env` and add the appropriate secrets to the .env file.
 
 
 ## Run the app and log in using SSO
