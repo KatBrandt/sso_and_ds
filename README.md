@@ -49,5 +49,8 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 Here's a demonstration of the application in action:
 
-![App Demo](videos/app-demo.gif)
+![App Demo](https://github.com/user-attachments/assets/replace-with-your-github-url)
 
+*Demo video is also available locally at [videos/app-demo.gif](videos/app-demo.gif)*
+
+Testing
