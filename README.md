@@ -49,5 +49,6 @@ You can click on `Directory` to see the list of users currently in the Directory
 
 Here's a demonstration of the application in action:
 
-![App Demo](videos/app-demo.gif)
+![App Demo](https://github.com/user-attachments/assets/ad975cd6-0229-4c8a-b219-4a6793aea1de)
+
 
