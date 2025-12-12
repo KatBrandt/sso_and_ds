@@ -28,6 +28,7 @@ use(
 get '/' do
   @current_user = session[:user] && JSON.pretty_generate(session[:user])
   @first_name = session[:first_name]
+  @last_name = session[:last_name]
   erb :index, :layout => :layout
 end
 
@@ -69,8 +70,26 @@ get '/callback' do
 
   session[:user] = profile.to_json
   session[:first_name] = profile.first_name
+  session[:last_name] = profile.last_name
 
   redirect '/' 
+end
+
+get '/users' do
+  directory_id = ENV['DIRECTORY_ID']
+
+  user_list = WorkOS::DirectorySync.list_users(
+    directory: directory_id
+  )
+
+  @users = user_list.data.map do |user|
+    {
+      first_name: user[:first_name],
+      last_name: user[:last_name]
+    }
+  end
+
+  erb :directory, :layout => :layout
 end
 
 # Logout a user
